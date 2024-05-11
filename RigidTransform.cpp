@@ -33,6 +33,12 @@ int main() {
   std::cout << "Point B orientation (Roll, Pitch, Yaw): ("
             << rpy_WB.roll_angle() << ", " << rpy_WB.pitch_angle() << ", "
             << rpy_WB.yaw_angle() << ")" << std::endl;
+  std::cout << "Point B position: (" << translation_WB.x() << ", "
+            << translation_WB.y() << ", " << translation_WB.z() << ")"
+            << std::endl;
+  std::cout << "Point B orientation (Roll, Pitch, Yaw): ("
+            << rpy_WB.roll_angle() << ", " << rpy_WB.pitch_angle() << ", "
+            << rpy_WB.yaw_angle() << ")" << std::endl;
 
   return 0;
 }
