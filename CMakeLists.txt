@@ -9,5 +9,10 @@ list(APPEND CMAKE_PREFIX_PATH "/opt/drake")
 # 寻找 Drake 和 Eigen 库
 find_package(drake CONFIG REQUIRED)
 add_executable(eigenEx1 RigidTransform.cpp)
-target_link_libraries(eigenEx1 Eigen3::Eigen)
-target_link_libraries(eigenEx1 drake::drake)
+target_link_libraries(eigenEx1 Eigen3::Eigen drake::drake)
+
+add_executable(ToQuaternion ToQuaternion.cpp)
+target_link_libraries(ToQuaternion Eigen3::Eigen drake::drake)
+
+add_executable(ZYXToQuaternion ZYXToQuaternion.cpp)
+target_link_libraries(ZYXToQuaternion Eigen3::Eigen)

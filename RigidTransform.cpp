@@ -45,6 +45,7 @@ int main() {
   std::cout << "Point B orientation (Roll, Pitch, Yaw): ("
             << rpy_WB.roll_angle() << ", " << rpy_WB.pitch_angle() << ", "
             << rpy_WB.yaw_angle() << ")" << std::endl;
+  std::cout << "X_WB.value: " << X_WB.translation() << std::endl;
 
   return 0;
 }
